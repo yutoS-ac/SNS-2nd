@@ -61,3 +61,7 @@ Route::group(['middleware' => 'auth'], function(){
         });
     });
 });
+
+
+Route::get('/register', 'Auth\RegisterController@register');
+Route::post('/register', 'Auth\RegisterController@register');

@@ -93,4 +93,10 @@ class RegisterController extends Controller
             return redirect()->route('loginView');
         }
     }
+    public function register(UserFormRequest $request){
+
+        return view('auth.register.register');
+        
+    }
+    
 }
